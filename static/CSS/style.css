@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+    background-color: darkslategrey;
+    color:cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+
+
+    margin-bottom: 20rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+    justify-content: space-around;
+}
+
+.column {
+    display:flex;
+    flex-direction: column;
+    min-width:min-content;
+    max-width:28vw;
+    text-align: left;
+}
+
+.innerrow {
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+
+    display:grid;
+    align-items: center;
+    border: 1px cadetblue solid;
+}
+.innerrow > p {
+    justify-self: center;
+}
+
+.column1 {
+    min-width:min-content;
+}
+.column2 {
+    width:min-content;
+    justify-self: right;
+}
+
+
+.heading {
+    background-color: aliceblue;
+    margin-top:2rem;
+    text-align: center;
+    min-width: 22rem;
+    max-width:28rem;
+}
+
+label{
+    min-width: fit-content;
+    width:16vw;
+    text-align: left;
+    margin: .5rem;
+    float:left;
+}
+
+input, select, button {
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-align:right;
+    margin:.5rem;
+}
+
+input[type = "checkbox"]{
+    transform: scale(2);
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+footer{
+    position: fixed;
+    display:block;
+    bottom:0;
+    
+    left:0;
+    width:8rem;
+    background-color: cadetblue;
+    border-radius: .5rem;
+    border: 1px solid #1f3a3a;
+}
+
+footer > button {
+    display: block;
+    margin: 1rem;
+    width: 6rem;
+    text-align: center;
+}
+
+footer > p {
+    margin-top: .5rem;
+    color: #1f3a3a;
+    text-align: center;
+}
